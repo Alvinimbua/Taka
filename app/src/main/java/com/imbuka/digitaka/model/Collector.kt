@@ -1,11 +1,11 @@
-package com.imbuka.digitaka.collector
+package com.imbuka.digitaka.model
 
-import android.content.Context
-import android.content.Intent
-import com.imbuka.digitaka.GreenActivity
+import android.os.Parcelable
 import com.imbuka.digitaka.R
+import kotlinx.android.parcel.Parcelize
 
-data class Collector(var imageId: Int, var name: String, var isfavorite: Boolean)
+@Parcelize
+data class Collector(var imageId: Int, var name: String, var isfavorite: Boolean):Parcelable
 
 
 //singleton object declaration which will help to get list of garbage collectors
