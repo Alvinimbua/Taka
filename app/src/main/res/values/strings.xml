@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Digi Taka</string>
+    <string name="title_activity_go">GoActivity</string>
+    <string name="tum_cleaners">TUM Cleaners</string>
+</resources>

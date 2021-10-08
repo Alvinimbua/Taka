@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_favorite">Favorites</string>
+
+    <string name="placeholder_image">Placeholder mage</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="favorite_icon">Favorite Icon</string>
+
+    <string name="top_collectors">Garbage Collectors</string>
+    <string name="favorites"> Favorites</string>
+
+</resources>
