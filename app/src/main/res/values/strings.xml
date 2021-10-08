@@ -2,4 +2,8 @@
     <string name="app_name">Digi Taka</string>
     <string name="title_activity_go">GoActivity</string>
     <string name="tum_cleaners">TUM Cleaners</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_service">Request Service</string>
+    <string name="collector_image">Collector Image</string>
 </resources>

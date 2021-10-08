@@ -9,5 +9,19 @@
         android:id="@+id/fragmentCollectorList"
         android:name="com.imbuka.digitaka.collector.CollectorListFragment"
         android:label="@string/top_collectors"
-        tools:layout="@layout/fragment_collector_list"/>
+        tools:layout="@layout/fragment_collector_list">
+        <action
+            android:id="@+id/action_fragmentCollectorList_to_collectorDetailsFragment"
+            app:destination="@id/collectorDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectorDetailsFragment"
+        android:name="com.imbuka.digitaka.collector.details.CollectorDetailsFragment"
+        android:label="Collector Details"
+        tools:layout="@layout/fragment_collector_details">
+
+        <argument
+            android:name="collector"
+            app:argType="com.imbuka.digitaka.model.Collector" />
+    </fragment>
 </navigation>
