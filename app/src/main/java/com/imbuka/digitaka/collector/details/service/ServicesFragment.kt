@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.imbuka.digitaka.R
 import com.imbuka.digitaka.databinding.FragmentServicesBinding
 import com.imbuka.digitaka.model.GarbageSpots
+import timber.log.Timber
 
 class ServicesFragment : Fragment() {
 
@@ -37,6 +38,8 @@ class ServicesFragment : Fragment() {
             hasFixedSize()
         }
 
-        serviceAdapter.submitList(GarbageSpots.serviceList)
+        Timber.e("Services: ${GarbageSpots.services}")
+
+        serviceAdapter.submitList(GarbageSpots.services)
     }
 }

@@ -29,7 +29,7 @@ class CollectorAdapter(
 
     override fun onBindViewHolder(collectorVieHolder: CollectorViewHolder, position: Int) {
 
-        collectorVieHolder?.let { it.bind(getItem(position)) }
+        collectorVieHolder.bind(getItem(position))
     }
 
     companion object {

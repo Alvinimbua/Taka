@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.imbuka.digitaka.R
 import com.imbuka.digitaka.databinding.ListItemCollectorBinding
 import com.imbuka.digitaka.databinding.ListServicesBinding
 import com.imbuka.digitaka.model.Services
@@ -24,7 +25,7 @@ class ServicesAdapter: ListAdapter<Services, ServicesAdapter.ServicesViewHolder>
     }
 
     override fun onBindViewHolder(serviceViewHolder: ServicesViewHolder, position: Int) {
-        serviceViewHolder?.let { it.bind(getItem(position)) }
+        serviceViewHolder.bind(getItem(position))
     }
 
     companion object {
@@ -46,10 +47,11 @@ class ServicesAdapter: ListAdapter<Services, ServicesAdapter.ServicesViewHolder>
 
         fun bind(item: Services) {
             binding.apply {
-                txtMission.text = item.typeOfService
-                txtOffer.text = item.typeOfService
+                //replace with service type image
+                serviceTypeImage.setImageResource(R.drawable.green)
                 txtServiceType.text = item.typeOfService
-                txtTimeOfOperation.text = item.typeOfService
+                serviceDaysText.text = item.dayOfOperation
+                timestampTextview.text = item.timestamp
             }
         }
     }
