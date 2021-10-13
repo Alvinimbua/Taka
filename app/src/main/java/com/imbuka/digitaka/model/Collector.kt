@@ -25,7 +25,6 @@ object VacationSpots {
     "TUM Cleaners", "Virgin Waste Management Limited"
     )
 
-//    private val collectOrder = arrayListOf("Order","Order","Order","Order","Order","Order")
 
     //Returns the list of collector objects to be displayed in CollectorListFragment RecylerView
 

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.imbuka.digitaka.R
 import com.imbuka.digitaka.databinding.FragmentServicesBinding
+import com.imbuka.digitaka.model.GarbageSpots
 
 class ServicesFragment : Fragment() {
 
@@ -14,12 +15,12 @@ class ServicesFragment : Fragment() {
         FragmentServicesBinding.inflate(layoutInflater)
     }
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View = binding.root
         // Inflate the layout for this fragment
-        return binding.root
-    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,5 +28,15 @@ class ServicesFragment : Fragment() {
     }
 
     private fun setUpRecycler() {
+
+        val serviceAdapter = ServicesAdapter()
+
+
+        binding.serviceRecyclerView.apply {
+            adapter = serviceAdapter
+            hasFixedSize()
+        }
+
+        serviceAdapter.submitList(GarbageSpots.serviceList)
     }
 }

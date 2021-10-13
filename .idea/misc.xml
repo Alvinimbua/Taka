@@ -11,9 +11,14 @@
         <entry key="app/src/main/res/layout/activity_green.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
         <entry key="app/src/main/res/layout/activity_pestlab.xml" value="0.11574074074074074" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.21710526315789475" />
+        <entry key="app/src/main/res/layout/fragment_collector_details.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_collector_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.21710526315789475" />
+        <entry key="app/src/main/res/layout/fragment_services.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_indv_collector.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_item_collector.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_services.xml" value="0.25" />
       </map>
     </option>
   </component>
