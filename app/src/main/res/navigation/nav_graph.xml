@@ -23,5 +23,13 @@
         <argument
             android:name="collector"
             app:argType="com.imbuka.digitaka.model.Collector" />
+
+        <action android:id="@+id/collectorDetailsFragment_to_chatFragment"
+            app:destination="@+id/chatFragment"/>
     </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.imbuka.digitaka.collector.details.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
 </navigation>

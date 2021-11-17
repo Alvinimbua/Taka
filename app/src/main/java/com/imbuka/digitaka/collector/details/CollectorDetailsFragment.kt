@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.tabs.TabLayoutMediator
 import com.imbuka.digitaka.collector.details.chat.ChatFragment
@@ -50,6 +51,13 @@ class CollectorDetailsFragment : Fragment() {
                     }
                 }
             }.attach()
+
+            requestServiceButton.setOnClickListener {
+                val action = CollectorDetailsFragmentDirections.collectorDetailsFragmentToChatFragment()
+                findNavController().navigate(action)
+
+            }
+
 
         }
 

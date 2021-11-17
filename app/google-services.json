@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11113403083",
+    "project_id": "digitaka-76c85",
+    "storage_bucket": "digitaka-76c85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11113403083:android:7fc1d947ae58b049eec14e",
+        "android_client_info": {
+          "package_name": "com.imbuka.digitaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11113403083-cpub65ev4hjog9a6a46s2ic92sfsi20c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7tHDy47fUjshmCr6cviPyh2uHPlDdCco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11113403083-cpub65ev4hjog9a6a46s2ic92sfsi20c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
